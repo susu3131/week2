@@ -55,7 +55,7 @@ p {
 }
 
 .header {
-  background: url(/image/banner.png) center;
+  background: url(../image/banner.png) center;
   background-size: cover;
 }
 .header ul {
