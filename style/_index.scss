@@ -55,11 +55,13 @@ p{
 }
 // 區塊1 header 
 .header{
+  height: 100vh;  
   background:url(../image/banner.png)center ;
   background-size: cover;
   ul{
-    margin: 308px 810px 308px 806px ;
-  }  
+    text-align: left;
+  }
+
   h1{
     font-size: 80px;
     line-height:106px;
@@ -91,6 +93,7 @@ p{
 // 區塊2 about
 .about{
   .border{
+    display: inline-block;
     border-bottom:solid 1px;
     padding-bottom: 24px;
     margin-bottom: 28px;
@@ -104,14 +107,22 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    &::before{
+      content: '';
+      width: 22px;
+      height: 22px;
+      background: #891818;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
   }
-  .circle{
-    margin-right: 16px;
-    background: #891818;
-    width: 22px;height: 22px;
-    border-radius: 50%;
-  }
+  
+  // .circle{
+  //   margin-right: 16px;
+  //   background: #891818;
+  //   width: 22px;height: 22px;
+  //   border-radius: 50%;
+  // }
   p{
     font-size: 24px;
     line-height: 42px;
